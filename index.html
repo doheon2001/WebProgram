@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>분리배출 정보 사이트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>분리배출 정보 사이트</h1>
+    
+    <section id="add-item">
+        <h2>분리배출 항목 추가</h2>
+        <form id="addRecyclingForm">
+            <div>
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="category">카테고리:</label>
+                <input type="text" id="category" name="category" required>
+            </div>
+            <div>
+                <label for="disposalMethod">처리 방법:</label>
+                <input type="text" id="disposalMethod" name="disposalMethod" required>
+            </div>
+            <div>
+                <label for="collectionDay">수거 요일:</label>
+                <input type="text" id="collectionDay" name="collectionDay" required>
+            </div>
+            <button type="submit">추가하기</button>
+        </form>
+    </section>
+    
+    <section id="recycling-list">
+        <h2>분리배출 항목 목록</h2>
+        <input type="text" id="search" placeholder="검색...">
+        <table>
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>카테고리</th>
+                    <th>처리 방법</th>
+                    <th>수거 요일</th>
+                </tr>
+            </thead>
+            <tbody id="itemsTableBody">
+                <!-- 항목들이 여기에 추가됩니다 -->
+            </tbody>
+        </table>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
